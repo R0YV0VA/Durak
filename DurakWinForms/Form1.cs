@@ -1026,7 +1026,7 @@ namespace DurakWinForms
       string nick = dlg.NickTb.Text;
 
       //Шукаємо вільний канал
-      int channelPort = 8001;
+      int channelPort = 9998;
         bool IsChannelRegistered = true;
         while (IsChannelRegistered)
         {
@@ -1081,7 +1081,7 @@ namespace DurakWinForms
       // Отримуємо силку на обєкт-гру. розміщену на
       // другому компютері
       game = (Game)Activator.GetObject(typeof(Game),
-            String.Format("tcp://{0}:8001/GameObject", serverName));
+            String.Format("tcp://{0}:9998/GameObject", serverName));
 
       if (game.PlayerCount == 6)
       {
