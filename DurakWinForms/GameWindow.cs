@@ -14,9 +14,9 @@ using System.Windows.Forms;
 
 namespace DurakWinForms
 {
-  public partial class Form1 : Form
+  public partial class GameWindow : Form
   {
-    protected Game game = null;//Сама гра 
+    protected Game game;//Сама гра 
     protected Gamer gamer = null;//Ігрок клієнта
 
     private const int _cardWidth = 80;//Ширина карти
@@ -35,7 +35,7 @@ namespace DurakWinForms
 
     private Dictionary<string, Bitmap> _cardsImages = new Dictionary<string, Bitmap>();//Лиця карт
 
-    public Form1()
+    public GameWindow()
     {
       InitializeComponent();
     }
@@ -93,12 +93,12 @@ namespace DurakWinForms
       Diamonds,
       Clubs,
       Hearts,
-      Spades,
+      Spades
     }
 
     public enum Ranks
     {
-      Six = 6,
+      Six,
       Seven,
       Eight,
       Nine,
@@ -1024,6 +1024,7 @@ namespace DurakWinForms
       if (dr != DialogResult.OK)
         return; // Відміна підключення
       string nick = dlg.NickTb.Text;
+      RemotingConfiguration.CustomErrorsEnabled(false);
 
       //Шукаємо вільний канал
       int channelPort = 9998;
@@ -1080,8 +1081,7 @@ namespace DurakWinForms
 
       // Отримуємо силку на обєкт-гру. розміщену на
       // другому компютері
-      game = (Game)Activator.GetObject(typeof(Game),
-            String.Format("tcp://{0}:9998/GameObject", serverName));
+      game = (Game)Activator.GetObject(typeof(Game), "tcp://"+ serverName + ":9998/GameObject");
 
       if (game.PlayerCount == 6)
       {

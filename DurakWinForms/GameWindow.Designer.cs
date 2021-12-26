@@ -1,6 +1,6 @@
 ﻿namespace DurakWinForms
 {
-  partial class Form1
+  partial class GameWindow
   {
     /// <summary>
     /// Required designer variable.
@@ -28,7 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DurakWinForms.GameWindow));
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.gameMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
