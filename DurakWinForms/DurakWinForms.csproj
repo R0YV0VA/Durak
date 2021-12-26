@@ -54,6 +54,9 @@
     <Compile Include="CreateServer.Designer.cs">
       <DependentUpon>CreateServer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Game.cs" />
+    <Compile Include="Gamer.cs" />
+    <Compile Include="GameState.cs" />
     <Compile Include="GameWindow.cs">
       <SubType>Form</SubType>
     </Compile>
