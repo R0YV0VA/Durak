@@ -57,7 +57,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Cansel";
+            this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 196);
+            this.ClientSize = new System.Drawing.Size(379, 190);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.NickTb);
             this.Controls.Add(this.serverNameTb);
@@ -109,6 +109,10 @@
             this.Controls.Add(this.button1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(397, 237);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(397, 237);
             this.Name = "CreateServer";
             this.Text = "Створити сервер";
             this.ResumeLayout(false);

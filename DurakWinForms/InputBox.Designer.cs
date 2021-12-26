@@ -73,7 +73,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Ok";
+            this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -85,7 +85,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 28);
             this.button2.TabIndex = 5;
-            this.button2.Text = "Cansel";
+            this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // HostNameTb
@@ -109,8 +109,12 @@
             this.Controls.Add(this.NickTb);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(397, 237);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(397, 237);
             this.Name = "InputBox";
-            this.Text = "Данні для сервера";
+            this.Text = "Під\'єднатися до сервера";
             this.Load += new System.EventHandler(this.InputBox_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
