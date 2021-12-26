@@ -2,12 +2,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 using System.Net;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
-using System.Runtime.Remoting.Lifetime;
 using System.Runtime.Serialization.Formatters;
 using System.Threading;
 using System.Windows.Forms;
@@ -675,7 +673,6 @@ namespace DurakWinForms
       if (dr != DialogResult.OK)
         return; // Відміна підключення
       string nick = dlg.NickTb.Text;
-      RemotingConfiguration.CustomErrorsEnabled(false);
 
       //Шукаємо вільний канал
       int channelPort = 9998;
